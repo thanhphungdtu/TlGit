@@ -1,0 +1,171 @@
+
+SFR@DESKTOP-0F7U13P MINGW64 /c/xampp/htdocs/training (master)
+$ git push origin master
+remote: Permission to thanhphungdtu/training.git denied to ngocthanh06.
+fatal: unable to access 'https://github.com/thanhphungdtu/training.git/': The requested URL returned error: 403
+
+SFR@DESKTOP-0F7U13P MINGW64 /c/xampp/htdocs/training (master)
+$ git push -u origin master
+remote: Permission to thanhphungdtu/training.git denied to ngocthanh06.
+fatal: unable to access 'https://github.com/thanhphungdtu/training.git/': The requested URL returned error: 403
+
+SFR@DESKTOP-0F7U13P MINGW64 /c/xampp/htdocs/training (master)
+$ git config --list
+core.symlinks=false
+core.autocrlf=true
+core.fscache=true
+color.diff=auto
+color.status=auto
+color.branch=auto
+color.interactive=true
+help.format=html
+rebase.autosquash=true
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+http.sslbackend=openssl
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge --skip -- %f
+filter.lfs.process=git-lfs filter-process --skip
+filter.lfs.required=true
+credential.helper=manager
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+user.name=Đào Ngọc Thạnh
+user.email=33601978+ngocthanh06@users.noreply.github.com
+
+SFR@DESKTOP-0F7U13P MINGW64 /c/xampp/htdocs/training (master)
+$ git config --global user.name "thanhphungdtu"
+warning: user.name has multiple values
+error: cannot overwrite multiple values with a single value
+       Use a regexp, --add or --replace-all to change user.name.
+
+SFR@DESKTOP-0F7U13P MINGW64 /c/xampp/htdocs/training (master)
+$ git config --global user.email "thanhphungdtu@gmail.com"
+
+SFR@DESKTOP-0F7U13P MINGW64 /c/xampp/htdocs/training (master)
+$ git push -u origin master
+remote: Permission to thanhphungdtu/training.git denied to ngocthanh06.
+fatal: unable to access 'https://github.com/thanhphungdtu/training.git/': The requested URL returned error: 403
+
+SFR@DESKTOP-0F7U13P MINGW64 /c/xampp/htdocs/training (master)
+$eval $(ssh-agent -s)
+Agent pid 612
+
+SFR@DESKTOP-0F7U13P MINGW64 /c/xampp/htdocs/training (master)
+$ ssh-add ~/.ssh/id_rsa
+Identity added: /c/Users/oishi/.ssh/id_rsa (thanhphungdtu@gmail.com)
+
+SFR@DESKTOP-0F7U13P MINGW64 /c/xampp/htdocs/training (master)
+$ cd ~/.ssh/
+
+SFR@DESKTOP-0F7U13P MINGW64 ~/.ssh (master)
+$ cat id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDKGVUUyg+MKOmGF/Y+MJEQ42Hpr7wIpK3rEYI7PVno7xK2YGxdDwe9rIHscjDZoJv0w0vOXzI5as1U+zpkUI7YqY14GSXU4R6MaDHntXk+KW5hez90xdhEPsgT9UO1uhT7VdO+M0DpIcKlE53Gwzf+B7pAfDV5cqKnJjXR9U/6gM3pRJZqH8+4k/9XkrWgK24B3Kjr5vSn
+
+SFR@DESKTOP-0F7U13P MINGW64 ~/.ssh (master)
+$ cd ~
+
+SFR@DESKTOP-0F7U13P MINGW64 ~ (master)
+$ cd c
+bash: cd: c: No such file or directory
+
+SFR@DESKTOP-0F7U13P MINGW64 ~ (master)
+$ cd c:
+
+SFR@DESKTOP-0F7U13P MINGW64 /c
+$ cd xampp/htdocs/
+
+SFR@DESKTOP-0F7U13P MINGW64 /c/xampp/htdocs
+$ rm rf training/
+rm: cannot remove 'rf': No such file or directory
+rm: cannot remove 'training/': Is a directory
+
+SFR@DESKTOP-0F7U13P MINGW64 /c/xampp/htdocs
+$ rm -rf training/
+
+SFR@DESKTOP-0F7U13P MINGW64 /c/xampp/htdocs
+$ git clone git@github.com:thanhphungdtu/training.git
+Cloning into 'training'...
+The authenticity of host 'github.com (13.229.188.59)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com,13.229.188.59' (RSA) to the list of known
+warning: You appear to have cloned an empty repository.
+
+SFR@DESKTOP-0F7U13P MINGW64 /c/xampp/htdocs
+$ git clone git@github.com:thanhphungdtu/training.git
+fatal: destination path 'training' already exists and is not an empty directory.
+
+SFR@DESKTOP-0F7U13P MINGW64 /c/xampp/htdocs
+$ git clone git@github.com:thanhphungdtu/training.git
+Cloning into 'training'...
+warning: You appear to have cloned an empty repository.
+
+SFR@DESKTOP-0F7U13P MINGW64 /c/xampp/htdocs
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+SFR@DESKTOP-0F7U13P MINGW64 /c/xampp/htdocs
+$ ls
+applications.html  blog.zip  chotelhvhv/     dashboard/   eloquent-dedicated-que
+bitnami.css        chotel/   chotelhvhv.rar  DemoFacade/  favicon.ico
+
+SFR@DESKTOP-0F7U13P MINGW64 /c/xampp/htdocs
+$ rm -rf training/
+
+SFR@DESKTOP-0F7U13P MINGW64 /c/xampp/htdocs
+$ ls
+applications.html  blog.zip  chotelhvhv/     dashboard/   eloquent-dedicated-que
+bitnami.css        chotel/   chotelhvhv.rar  DemoFacade/  favicon.ico
+
+SFR@DESKTOP-0F7U13P MINGW64 /c/xampp/htdocs
+$ git clone git@github.com:thanhphungdtu/training.git
+Cloning into 'training'...
+Warning: Permanently added the RSA host key for IP address '52.74.223.119' to th
+warning: You appear to have cloned an empty repository.
+
+SFR@DESKTOP-0F7U13P MINGW64 /c/xampp/htdocs
+$ cd training/
+
+SFR@DESKTOP-0F7U13P MINGW64 /c/xampp/htdocs/training (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+SFR@DESKTOP-0F7U13P MINGW64 /c/xampp/htdocs/training (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        readme.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+SFR@DESKTOP-0F7U13P MINGW64 /c/xampp/htdocs/training (master)
+$ git add .
+
+SFR@DESKTOP-0F7U13P MINGW64 /c/xampp/htdocs/training (master)
+$ git commit -m "First commit"
+[master (root-commit) 63f015d] First commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 readme.md
+
+SFR@DESKTOP-0F7U13P MINGW64 /c/xampp/htdocs/training (master)
+$ git push origin master
+Warning: Permanently added the RSA host key for IP address '13.250.177.223' to t
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 222 bytes | 74.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To github.com:thanhphungdtu/training.git
+ * [new branch]      master -> master
+
+SFR@DESKTOP-0F7U13P MINGW64 /c/xampp/htdocs/training (master)

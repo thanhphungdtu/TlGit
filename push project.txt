@@ -1,0 +1,7 @@
+git init
+git status
+ git remote add origin git@github.com:thanhphungdtu/test2.git
+git status
+git add .
+git commit -m "comment"
+git push origin master
